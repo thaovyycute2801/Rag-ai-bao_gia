@@ -1,0 +1,37 @@
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Generated / runtime artifacts
+rag_index/
+reports/
+logs/
+*.log
+
+# Input & golden data (customer BOQ / quotation — do not commit)
+data/
+golden-data/
+
+# Data & OS noise
+.DS_Store
+*.xlsx
+*.xls
+*.xlsm
+
+# Keep the quotation template (needed to run)
+!report-template/
+!report-template/*.xlsx
+
+# Local extras
+data copy/
+*.zip
+.commandcode/
